@@ -1,0 +1,85 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Verificador de Palíndromo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+</head>
+
+<body>
+  <div class="section">
+    <div class="columns is-centered is-mobile">
+      <div class="column is-three-quarters">
+        <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+          <thead>
+            <tr>
+              <nav class="level">
+                <div>
+                  <th style="text-align: center; padding-top: 10px;"><strong>Verificador de Palíndromo</strong></th>
+                  <th style="text-align: center;">
+                    <input type="button" data-test="limpar-dados" class="button is-white" id="botaoLimparHistorico"
+                      onclick="limparHistorico(event)" value="Apagar Histórico">
+                  </th>
+                </div>
+              </nav>
+            </tr>
+          </thead>
+          <tbody id="entradas">
+            <tr>
+              <th colspan="2">
+                <input id="palavra" class="input" type="text" placeholder="Palíndromo" data-test="entrada"
+                  onkeyup="testePalindromo(event)" autofocus>
+              </th>
+            <tr>
+              <th>Frase</th>
+              <th>Palidromo</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function limparHistorico(event) {
+      var botaoLimparHistorico = document.querySelector("#botaoLimparHistorico");
+      let linhas = document.getElementsByClassName("linha");
+      while (linhas.length > 0) {
+        linhas[0].parentNode.removeChild(linhas[0]);
+      }
+
+      document.getElementById("palavra").value = "";
+    }
+
+    function testePalindromo(event) {
+      var testarPalindromo = document.getElementById("palavra");
+      if (testarPalindromo.value.replace(/ /g, '').length == 0) {
+        return; // caso esteja vazio, apenas retorna e não faz nada
+      }
+      if (event.which == 13 || event.keyCode === 13) {
+        event.preventDefault();
+        let ehPalindromo = "não";
+
+        if (testarPalindromo.value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^0-9a-z]/gi, '').replace(/ /g, '') == testarPalindromo.value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^0-9a-z]/gi, '').replace(/ /g, '').split('').reverse().join('')) {
+          ehPalindromo = "sim";
+        }
+
+        let tabela = document.getElementById("entradas");
+        let novaLinha = tabela.insertRow();
+        novaLinha.classList.add("linha");
+        let palavraCell = novaLinha.insertCell();
+        palavraCell.appendChild(document.createTextNode(testarPalindromo.value));
+        palavraCell.setAttribute("data-verificado", ehPalindromo == "sim" ? "positivo" : "negativo");
+        let palindromoCell = novaLinha.insertCell();
+        palindromoCell.appendChild(document.createTextNode(ehPalindromo));
+
+        testarPalindromo.value = "";
+      }
+    }
+
+  </script>
+
+</body>
+
+</html>
