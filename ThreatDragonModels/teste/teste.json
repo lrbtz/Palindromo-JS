@@ -79,6 +79,16 @@
               "id": "b9a5e67f-55da-4b30-a83f-0636e4b6dca3",
               "z": 5,
               "hasOpenThreats": false,
+              "threats": [
+                {
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "title": "DOS",
+                  "description": "Bombardeio de requisições podem impedir os serviços de login.",
+                  "mitigation": "Bloqueio de IP após a detecção de número de requisições excessivas. / Alocar mais recursos de servidor."
+                }
+              ],
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
