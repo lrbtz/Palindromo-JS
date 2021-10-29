@@ -217,6 +217,16 @@
               "id": "385ecde7-e58f-4f85-a867-6d2060bb2c41",
               "z": 22,
               "hasOpenThreats": false,
+              "threats": [
+                {
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "title": "DOS",
+                  "type": "Denial of service",
+                  "description": "Bombardeio de requisições para a página do blog podem fazer com que a mesma saia do ar.",
+                  "mitigation": "Bloquear IP de atacantes depois de muitas requisições repetitivas. / Alocar mais recursos computacionais."
+                }
+              ],
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
