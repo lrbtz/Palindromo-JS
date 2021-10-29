@@ -14,25 +14,27 @@
         "diagramJson": {
           "cells": [
             {
-              "type": "tm.Process",
+              "type": "tm.Store",
               "size": {
-                "width": 100,
-                "height": 100
+                "width": 160,
+                "height": 80
               },
               "position": {
-                "x": 11,
-                "y": 48
+                "x": 571,
+                "y": 12
               },
               "angle": 0,
-              "id": "3cc2a535-c62e-4f3e-825d-2b553509c296",
+              "id": "db262bd5-1f9a-43a8-9874-510f02688830",
               "z": 1,
               "hasOpenThreats": false,
+              "outOfScope": false,
+              "storesCredentials": true,
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "process 0"
+                  "text": "Banco de Dados"
                 },
                 ".element-text": {
                   "class": "element-text hasNoOpenThreats isInScope"
@@ -46,11 +48,11 @@
                 "height": 80
               },
               "position": {
-                "x": 296,
-                "y": 55
+                "x": 33,
+                "y": 48
               },
               "angle": 0,
-              "id": "5332a56a-7551-48d1-92bc-f1619e1fd9c1",
+              "id": "49356310-e887-4bc8-8acc-3d77462f0284",
               "z": 2,
               "hasOpenThreats": false,
               "attrs": {
@@ -58,7 +60,7 @@
                   "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "actor 1"
+                  "text": "Escritor blog"
                 },
                 ".element-text": {
                   "class": "element-text hasNoOpenThreats isInScope"
@@ -66,41 +68,55 @@
               }
             },
             {
-              "type": "tm.Flow",
-              "smooth": true,
-              "source": {
-                "id": "3cc2a535-c62e-4f3e-825d-2b553509c296"
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
               },
-              "target": {
-                "id": "5332a56a-7551-48d1-92bc-f1619e1fd9c1"
+              "position": {
+                "x": 34,
+                "y": 201
               },
-              "vertices": [
-                {
-                  "x": 229,
-                  "y": 60
-                }
-              ],
-              "id": "5c9305cc-d35d-43ed-93b4-2cc52d05023d",
-              "labels": [
-                {
-                  "position": 0.5,
-                  "attrs": {
-                    "text": {
-                      "text": "flow 2",
-                      "font-weight": "400",
-                      "font-size": "small"
-                    }
-                  }
-                }
-              ],
+              "angle": 0,
+              "id": "af9d426a-ba2e-44f7-ad3f-099d4825f2bb",
               "z": 3,
               "hasOpenThreats": false,
               "attrs": {
-                ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
                 },
-                ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                "text": {
+                  "text": "Leitor blog"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 319,
+                "y": 141
+              },
+              "angle": 0,
+              "id": "158d8f43-e247-47df-a1c0-f3b3465dd18c",
+              "z": 4,
+              "hasOpenThreats": false,
+              "isSigned": true,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Aplicação Web"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
                 }
               }
             }
@@ -108,7 +124,7 @@
         },
         "size": {
           "height": 590,
-          "width": 790
+          "width": 1076
         }
       }
     ],
