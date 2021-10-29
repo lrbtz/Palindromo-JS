@@ -87,6 +87,14 @@
                   "title": "DOS",
                   "description": "Bombardeio de requisições podem impedir os serviços de login.",
                   "mitigation": "Bloqueio de IP após a detecção de número de requisições excessivas. / Alocar mais recursos de servidor."
+                },
+                {
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "title": "Vazamento de dados",
+                  "type": "Information disclosure",
+                  "description": "O atacante pode interceptar pacotes de login na rede e obter credenciais de login.",
+                  "mitigation": "Encriptar o fluxo de comunicação da rede (ex: https)."
                 }
               ],
               "attrs": {
@@ -411,6 +419,24 @@
               "id": "ea49a654-50a3-4055-950a-6c55ef35c07c",
               "z": 28,
               "hasOpenThreats": false,
+              "threats": [
+                {
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "title": "Interceptação de notícias",
+                  "description": "O atacante pode interceptar um pacote de dados e mudar o conteúdo do mesmo (ex: conteúdo da notícia, autor e etc).",
+                  "mitigation": "Criptografia de fluxo."
+                },
+                {
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "title": "Negação de autoria",
+                  "description": "Com a modificação do conteúdo da notícia, o atacante pode se passar por outro escritor.",
+                  "mitigation": "Serviço de sessão deve atribuir autores na área de confiança, confirmada com a autenticação do usuário."
+                }
+              ],
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
