@@ -243,6 +243,24 @@
               "id": "cf7f12a5-5cc8-4fa0-9734-ddded751575f",
               "z": 23,
               "hasOpenThreats": false,
+              "threats": [
+                {
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "title": "Roubo de sessão",
+                  "type": "Spoofing",
+                  "description": "O atacante forja pacotes para criar requisições em nome de outro usuário.",
+                  "mitigation": "Criptografia na comunicação da rede."
+                },
+                {
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Repudiation",
+                  "title": "Requisições anonimas",
+                  "description": "Atacante pode efetuar ações no sistema sem a necessidade de autenticação.",
+                  "mitigation": "Tornar rotas da API dependentes da autenticação."
+                }
+              ],
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
@@ -734,7 +752,7 @@
                   "y": 87
                 },
                 {
-                  "x": 614,
+                  "x": 597,
                   "y": 28
                 },
                 {
