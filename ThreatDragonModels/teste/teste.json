@@ -191,6 +191,16 @@
               "id": "573e82d6-400c-41e5-aa5b-4b5ebbf4ea88",
               "z": 15,
               "hasOpenThreats": false,
+              "threats": [
+                {
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "title": "Vazamento de informações",
+                  "type": "Information disclosure",
+                  "description": "O atacante pode extrair dados sensíveis de autenticação.",
+                  "mitigation": "Criptografia para dados sensíveis, impossibilitando o login mesmo após o vazamento."
+                }
+              ],
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
