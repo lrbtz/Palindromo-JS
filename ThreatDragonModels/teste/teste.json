@@ -1,14 +1,14 @@
 {
   "summary": {
     "title": "teste",
-    "owner": "teste",
-    "description": "teste"
+    "owner": "Lara Oliveira",
+    "description": "O blog é em formato de notícias e pode ter acesso de mais de um usuário escritor. O site recebe acesso dos seus leitores que podem realizar comentários nas postagens e para isso, é necessário que realizem login."
   },
   "detail": {
     "contributors": [],
     "diagrams": [
       {
-        "title": "v",
+        "title": "Diagrama",
         "thumbnail": "./public/content/images/thumbnail.jpg",
         "id": 0
       },
@@ -18,6 +18,6 @@
         "id": 1
       }
     ],
-    "reviewer": "teste"
+    "reviewer": ""
   }
 }
