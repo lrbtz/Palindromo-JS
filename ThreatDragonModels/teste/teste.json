@@ -73,7 +73,7 @@
               },
               "position": {
                 "x": 287,
-                "y": 139
+                "y": 138
               },
               "angle": 0,
               "id": "b9a5e67f-55da-4b30-a83f-0636e4b6dca3",
@@ -201,6 +201,8 @@
                   "mitigation": "Criptografia para dados sensíveis, impossibilitando o login mesmo após o vazamento."
                 }
               ],
+              "isEncrypted": true,
+              "storesCredentials": true,
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
@@ -593,6 +595,7 @@
               "id": "bfa982d3-8fbb-4354-9aa7-897a751f91cf",
               "z": 31,
               "hasOpenThreats": false,
+              "storesCredentials": false,
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
