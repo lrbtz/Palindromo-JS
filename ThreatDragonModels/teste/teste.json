@@ -72,8 +72,8 @@
                 "height": 100
               },
               "position": {
-                "x": 289,
-                "y": 137
+                "x": 287,
+                "y": 139
               },
               "angle": 0,
               "id": "b9a5e67f-55da-4b30-a83f-0636e4b6dca3",
@@ -94,7 +94,7 @@
                   "title": "Vazamento de dados",
                   "type": "Information disclosure",
                   "description": "O atacante pode interceptar pacotes de login na rede e obter credenciais de login.",
-                  "mitigation": "Encriptar o fluxo de comunicação da rede (ex: https)."
+                  "mitigation": "Criptografia do fluxo de comunicação da rede (ex: https)."
                 }
               ],
               "attrs": {
@@ -259,6 +259,22 @@
                   "title": "Requisições anonimas",
                   "description": "Atacante pode efetuar ações no sistema sem a necessidade de autenticação.",
                   "mitigation": "Tornar rotas da API dependentes da autenticação."
+                },
+                {
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "title": "Interceptação de dados",
+                  "description": "Atacante pode ler diversos dados da comunicação entre navegador e API.",
+                  "mitigation": "Criptografia do fluxo da rede."
+                },
+                {
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "title": "DOS",
+                  "description": "Bombardeio de requisições pode tirar a API do ar.",
+                  "mitigation": "Bloqueio de IP para muitas requisições repetitivas. / Alocação de mais recursos computacionais."
                 }
               ],
               "attrs": {
