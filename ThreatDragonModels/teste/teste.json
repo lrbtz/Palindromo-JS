@@ -676,6 +676,39 @@
                   "class": "connection hasNoOpenThreats isInScope"
                 }
               }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 578,
+                "y": 443
+              },
+              "target": {
+                "x": 494,
+                "y": 477
+              },
+              "vertices": [
+                {
+                  "x": 623,
+                  "y": 341
+                },
+                {
+                  "x": 550,
+                  "y": 215
+                },
+                {
+                  "x": 373,
+                  "y": 279
+                },
+                {
+                  "x": 398,
+                  "y": 441
+                }
+              ],
+              "id": "005e144a-a6fe-4571-aa1d-11179664c8a5",
+              "z": 37,
+              "attrs": {}
             }
           ]
         },
