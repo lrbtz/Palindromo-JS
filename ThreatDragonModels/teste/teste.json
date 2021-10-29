@@ -192,8 +192,8 @@
                 "height": 100
               },
               "position": {
-                "x": 726,
-                "y": 388
+                "x": 609,
+                "y": 434
               },
               "angle": 0,
               "id": "385ecde7-e58f-4f85-a867-6d2060bb2c41",
@@ -218,8 +218,8 @@
                 "height": 100
               },
               "position": {
-                "x": 510,
-                "y": 296
+                "x": 435,
+                "y": 282
               },
               "angle": 0,
               "id": "cf7f12a5-5cc8-4fa0-9734-ddded751575f",
@@ -280,14 +280,22 @@
               "target": {
                 "id": "573e82d6-400c-41e5-aa5b-4b5ebbf4ea88"
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 602,
+                  "y": 278
+                }
+              ],
               "id": "ffc2e710-fc8a-4920-a1c5-68d9389916cc",
               "labels": [
                 {
-                  "position": 0.5,
+                  "position": {
+                    "distance": 0.47332193601827544,
+                    "offset": -12.978258792650722
+                  },
                   "attrs": {
                     "text": {
-                      "text": "flow 9",
+                      "text": "Dados de credenciais",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -316,8 +324,8 @@
               },
               "vertices": [
                 {
-                  "x": 614,
-                  "y": 372
+                  "x": 639,
+                  "y": 343
                 }
               ],
               "id": "8ae334e5-a357-4705-b9e4-3f15312b4880",
@@ -326,7 +334,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 10",
+                      "text": "Status autenticação",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -355,8 +363,8 @@
               },
               "vertices": [
                 {
-                  "x": 594,
-                  "y": 340
+                  "x": 678,
+                  "y": 385
                 }
               ],
               "id": "bbae1cad-4ce7-48e2-bf86-b685aa029bf3",
@@ -365,7 +373,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 11",
+                      "text": "Status autenticação",
                       "font-weight": "400",
                       "font-size": "small"
                     }
