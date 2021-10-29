@@ -275,6 +275,14 @@
                   "title": "DOS",
                   "description": "Bombardeio de requisições pode tirar a API do ar.",
                   "mitigation": "Bloqueio de IP para muitas requisições repetitivas. / Alocação de mais recursos computacionais."
+                },
+                {
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "title": "Publicação não autorizada",
+                  "description": "Um atacante sem privilégio pode forjar informações e acessar funções não autorizadas.",
+                  "mitigation": "Deixar a API lidar com a identidade do usuário através de sessões na área de confiança."
                 }
               ],
               "attrs": {
