@@ -118,7 +118,12 @@
               "target": {
                 "id": "b9a5e67f-55da-4b30-a83f-0636e4b6dca3"
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 265,
+                  "y": 198
+                }
+              ],
               "id": "de703ab4-2848-4bff-b47f-230328dfff52",
               "labels": [
                 {
@@ -152,7 +157,12 @@
               "target": {
                 "id": "b9a5e67f-55da-4b30-a83f-0636e4b6dca3"
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 222,
+                  "y": 133
+                }
+              ],
               "id": "43e9aba3-9774-4a83-851a-61295c53fc8c",
               "labels": [
                 {
