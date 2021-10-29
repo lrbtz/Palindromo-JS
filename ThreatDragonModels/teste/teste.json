@@ -536,7 +536,10 @@
               "id": "412586f8-bec3-4d2f-9e81-30ca938873a0",
               "labels": [
                 {
-                  "position": 0.5,
+                  "position": {
+                    "distance": 0.4287968896739435,
+                    "offset": -3.470766713494593
+                  },
                   "attrs": {
                     "text": {
                       "text": "Infos Postagem",
