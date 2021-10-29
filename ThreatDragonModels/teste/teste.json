@@ -616,6 +616,66 @@
                   "class": "connection hasNoOpenThreats isInScope"
                 }
               }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 617,
+                "y": 417
+              },
+              "angle": 0,
+              "id": "96e841ae-6159-4e0c-b4e6-0e2b7acd48ff",
+              "z": 35,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Tabela Comentarios"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "cf7f12a5-5cc8-4fa0-9734-ddded751575f"
+              },
+              "target": {
+                "id": "96e841ae-6159-4e0c-b4e6-0e2b7acd48ff"
+              },
+              "vertices": [],
+              "id": "a0c2185a-b085-4e90-b666-7a5c8af09396",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Infos Comentario",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 36,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
             }
           ]
         },
